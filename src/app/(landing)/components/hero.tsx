@@ -43,7 +43,7 @@ export default function HeroSection() {
             />
             {/* Mobile image */}
             <Image
-              src="/bill.JPG"
+              src="/marketplace.png"
               alt="The Peswa Podcast Hero Background"
               fill
               className="object-cover block md:hidden"
