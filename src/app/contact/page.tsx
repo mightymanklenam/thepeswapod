@@ -98,10 +98,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold mb-2">Accra</h3>
                     <p className="text-sm text-muted-foreground">
-                      210A Tulip Road
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Community 1, Lakeside Estates
+                      The Hive <br />
+                      Tse Addo, Christ Temple East, Teshie Rasta Rd
                     </p>
                   </div>
                 </div>
@@ -113,13 +111,13 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold mb-2">Be a Guest</h3>
                     <p className="text-sm text-muted-foreground">
-                      guests@peswa.com
+                      peswagh@gmail.com
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">Partnerships</h3>
+                    <h3 className="font-semibold mb-2">Reach out to us</h3>
                     <p className="text-sm text-muted-foreground">
-                      partners@peswa.com
+                      peswagh@gmail.com
                     </p>
                   </div>
                 </div>
@@ -290,7 +288,7 @@ export default function Contact() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full flex items-center justify-center gap-2"
+                      className="w-full flex items-center justify-center gap-2 cursor-pointer hover:opacity-80"
                     >
                       {isSubmitting ? (
                         <div className="flex items-center gap-3">

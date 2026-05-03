@@ -127,9 +127,9 @@ export default function EpisodesClient({ episodes }: EpisodesClientProps) {
                     {episode.title}
                   </h3>
 
-                  <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                  {/* <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
                     {episode.description}
-                  </p>
+                  </p> */}
 
 
                   <div className="flex flex-wrap gap-1 mb-4">

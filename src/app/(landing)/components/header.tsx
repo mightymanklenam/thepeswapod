@@ -26,6 +26,7 @@ export const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <header>
       <nav
@@ -99,7 +100,9 @@ export const Header = () => {
                   ))}
                 </ul>
               </div>
+
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                {/* Listen Now — hidden when scrolled on desktop */}
                 <Button
                   asChild
                   variant="outline"
@@ -110,6 +113,8 @@ export const Header = () => {
                     <span>Listen Now</span>
                   </Link>
                 </Button>
+
+                {/* Subscribe — always shows on mobile, hidden when scrolled on desktop */}
                 <Button
                   asChild
                   size="sm"
@@ -119,10 +124,15 @@ export const Header = () => {
                     <span>Subscribe</span>
                   </Link>
                 </Button>
+
+                {/* Subscribe compact — only shows on desktop when scrolled */}
                 <Button
                   asChild
                   size="sm"
-                  className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
+                  className={cn(
+                    "hidden",
+                    isScrolled && "lg:inline-flex"
+                  )}
                 >
                   <Link href="/#subscribe">
                     <span>Subscribe</span>

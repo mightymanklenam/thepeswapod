@@ -43,7 +43,7 @@ export default function HeroSection() {
             />
             {/* Mobile image */}
             <Image
-              src="/bill.JPG"
+              src="/mobile-hero.jpg"
               alt="The Peswa Podcast Hero Background"
               fill
               className="object-cover block md:hidden"
@@ -54,7 +54,7 @@ export default function HeroSection() {
                 objectFit: 'cover',
               }}
             />
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="relative z-10 flex min-h-screen items-center justify-center px-6">
             <div className="text-center">
