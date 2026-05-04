@@ -67,9 +67,9 @@ export default async function FeaturedEpisodes() {
                     {episode.title}
                   </h3>
 
-                  <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                  {/* <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
                     {episode.description}
-                  </p>
+                  </p> */}
 
 
                   <div className="flex flex-wrap gap-1 mt-3 mb-4">
